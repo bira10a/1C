@@ -150,3 +150,8 @@ body::-webkit-scrollbar {
   width: .5%;
   min-width: 10px;
 }
+
+// для Safari: скрываем дефолтный btn search
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
