@@ -31,6 +31,14 @@
       box-shadow: 2px -2px 19px 3px $accent;
     }
 
+    img {
+      border-radius: 21px;
+
+      @include r(377) {
+        border-radius: 9px;
+      }
+    }
+
     @include r(769) {
       margin-bottom: 35px;
     }
@@ -75,6 +83,25 @@
   &__text {
     max-width: 1095px;
     font-size: rem(18);
+
+    a {
+      transition: all linear 0.2s;
+      outline: transparent;
+
+      &:focus {
+        box-shadow: 2px -2px 19px 3px $accent;
+        border-radius: 3px;
+      }
+    
+      &:hover {
+        color: $accent;
+      }
+      
+      &:active {
+        box-shadow: inset 0 10px 4px #e11c4a1e;
+        color: rosybrown;
+      }
+    }
 
     p {
       margin-bottom: 13px;
